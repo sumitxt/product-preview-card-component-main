@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 1px);
+    margin: 0 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.container {
+    border-radius: 1px;
+    max-width: 500px;
+}
+
+article {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.5rem;
+    border-radius: 0 0 1rem 1rem;
+    font-weight: 500;
+    margin-top: -1rem;
+}
+#text{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7;
+}
+h1 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%)
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: medium;
+    color: hsl(228, 12%, 48%);
+}
+
+#discounted {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+
+#orginal {
+    text-decoration: line-through;
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+ul{
+    padding-bottom: 2%;
+}
+li {
+    display: inline;
+    font-size: 1.25rem;
+}
+
+#bttn {
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+#bttn:hover {
+    background-color: hsl(157, 38%, 15%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media (min-width:640px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    img {
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+    }
+    article {
+        border-radius: 0 1rem 1rem 0;
+        margin-top: 0;
+    }
+}
